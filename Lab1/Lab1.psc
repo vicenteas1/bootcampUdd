@@ -19,33 +19,35 @@ Algoritmo Lab1
 	Dimension arregloProductos[cantidadProductos]
 	
 	Para i<-1 Hasta cantidadProductos Hacer
-		Escribir "Ingrese el precio de su producto ", i
+		Escribir "Producto: ", i, ". Ingresar precio."
 		Leer precio
 		
-		Escribir "Ingrese el peso de su producto en Kg ", i
+		Escribir "Producto: ", i, ". Ingresar peso (Kg)."
 		Leer peso
 		
 		Repetir
 			Escribir "¿Se debe aplicar algún descuento?"
-			Escribir "Escribir 1 si se debe aplicar algun descuento"
-			Escribir "Escribir 2 si no se debe aplicar algun descuento"
+			Escribir "Escribir 1. Aplicar descuento"
+			Escribir "Escribir 2. No se debe aplicar descuento"
 			Leer aplicarDescuento
 		Hasta Que aplicarDescuento = 1 O aplicarDescuento = 2
 		
 		Si aplicarDescuento = 1 Entonces	
 			Repetir
-				Escribir "Ingrese el porcentaje de descuento a aplicar. El descuento no puede ser menor a 0% ni mayor al 100%."
+				Escribir "Ingrese el porcentaje de descuento a aplicar."
+				Escribir "El descuento no puede ser menor a 0% ni mayor al 100%."
 				Leer porcentajeDescuento
 			Hasta Que porcentajeDescuento <= 100 Y porcentajeDescuento >= 0
 		FinSi
 		
-		Escribir "Calculando precio para producto: ", i
+		Escribir "Producto: ", i, ". Calculando precio..."
 		precioDescuento <- precio - (precio*porcentajeDescuento/100)	
 		
 		Escribir "Aplicando IVA...."
 		precioIva <- precioDescuento + (precioDescuento*0.12)
 		
-		Escribir "Precio producto ", i ". ", precioIva
+		Escribir "Producto: ", i, ". Precio con descuento e iva incluido: ", precioIva
+		
 		arregloProductos[i] <- precioIva
 		sumaPrecios <- sumaPrecios + precioIva
 		sumaPeso <- sumaPeso + peso
@@ -60,12 +62,13 @@ Algoritmo Lab1
 	
 	Si aplicarDescuento = 1 Entonces	
 		Repetir
-			Escribir "Ingrese el porcentaje de descuento a aplicar. El descuento no puede ser mayor al 100% del precio del producto ni menor a 0%."
+			Escribir "Ingrese el porcentaje de descuento a aplicar."
+			Escribir "El descuento no puede ser menor a 0% ni mayor al 100%."
 			Leer porcentajeDescuento
 		Hasta Que porcentajeDescuento <= 100 Y porcentajeDescuento >= 0		
 	FinSi
 	
-	Escribir "Aplicando descuento por cantidad de productos"
+	Escribir "Aplicando descuento por cantidad de productos..."
 	sumaPrecios <- sumaPrecios - (sumaPrecios*porcentajeDescuento/100)	
 	
 	Escribir "Ingrese el costo de tarifa por ubicación de destino."
@@ -77,5 +80,5 @@ Algoritmo Lab1
 	Escribir "Calculando precio final de el o los productos..."
 	precioPorPagar <- sumaPrecios + costoEnvio
 	
-	Escribir "Se deben pagar: $", precioPorPagar
+	Escribir "Monto total a pagar: ", precioPorPagar
 FinAlgoritmo

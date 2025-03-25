@@ -1,17 +1,17 @@
 Algoritmo Lab1
-	Definir precio					Como Entero
-	Definir aplicarDescuento 		Como Entero
-	Definir porcentajeDescuento		Como Entero
-	Definir precioDescuento 		Como Entero
-	Definir costoEnvio 				Como Entero
-	Definir tarifaEnvio 			Como Entero
-	Definir cantidadProductos 		Como Entero	
+	Definir precio				Como Entero
+	Definir aplicarDescuento 	Como Entero
+	Definir porcentajeDescuento	Como Entero
+	Definir precioDescuento 	Como Entero
+	Definir costoEnvio 			Como Entero
+	Definir tarifaEnvio 		Como Entero
+	Definir cantidadProductos 	Como Entero	
 
-	Definir precioIva 				Como Real
-	Definir sumaPrecios 			Como Real
-	Definir sumaPeso 				Como Real
-	Definir peso 					Como Real
-	Definir precioPorPagar			Como Real
+	Definir precioIva 			Como Real
+	Definir sumaPrecios 		Como Real
+	Definir sumaPeso 			Como Real
+	Definir peso 				Como Real
+	Definir precioPorPagar		Como Real
 	
 	Escribir "Cuantos productos desea ingresar"
 	Leer cantidadProductos

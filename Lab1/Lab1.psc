@@ -1,9 +1,9 @@
 Algoritmo Lab1
 	Definir precio					Como Entero
 	Definir aplicarDescuento 		Como Entero
-	Definir porcentajeDescuento 	Como Entero
+	Definir porcentajeDescuento		Como Entero
 	Definir precioDescuento 		Como Entero
-	Definir costoEnvio 			Como Entero
+	Definir costoEnvio 				Como Entero
 	Definir tarifaEnvio 			Como Entero
 	Definir cantidadProductos 		Como Entero	
 

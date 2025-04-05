@@ -1,0 +1,272 @@
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4 (main)
+$ ls
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4 (main)
+$ mkdir Proyecto2
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4 (main)
+$ cd
+.gitkeep   Proyecto2/
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4 (main)
+$ cd Proyecto2/
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto2 (main)
+$ mkdir Experimento1 Experimento2 Experimento3
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto2 (main)
+$ ls
+Experimento1/  Experimento2/  Experimento3/
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto2 (main)
+$ cd Experimento1
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto2/Experimento1 (main)
+$ mkdir Datos
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto2/Experimento1 (main)
+$ cd Datos/
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto2/Experimento1/Datos (main)
+$ mkdir Raw Procesados Restaurados
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto2/Experimento1/Datos (main)
+$ ls
+Procesados/  Raw/  Restaurados/
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto2/Experimento1/Datos (main)
+$ cd ..
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto2/Experimento1 (main)
+$ ls
+Datos/
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto2/Experimento1 (main)
+$ pwd
+/c/Users/Vicente/Desktop/github/bootcamp/UDD/semana4/Proyecto2/Experimento1
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto2/Experimento1 (main)
+$ touch Registro.txt
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto2/Experimento1 (main)
+$ pwd
+/c/Users/Vicente/Desktop/github/bootcamp/UDD/semana4/Proyecto2/Experimento1
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto2/Experimento1 (main)
+$ ls
+Datos/  Registro.txt
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto2/Experimento1 (main)
+$ cd ..
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto2 (main)
+$ ls
+Experimento1/  Experimento2/  Experimento3/
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto2 (main)
+$ cd ..
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4 (main)
+$ ls
+Proyecto2/
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4 (main)
+$ cd ..
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD (main)
+$ ls
+Lab1/      semana12/  semana17/  semana21/  semana26/  semana5/
+README.md  semana13/  semana18/  semana22/  semana27/  semana6/
+semana1/   semana14/  semana19/  semana23/  semana28/  semana7/
+semana10/  semana15/  semana2/   semana24/  semana3/   semana8/
+semana11/  semana16/  semana20/  semana25/  semana4/   semana9/
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD (main)
+$ cd semana4
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4 (main)
+$ ls
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD (main)
+$ cd semana4/
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4 (main)
+$ ls
+Proyecto2/  comandos.txt
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4 (main)
+$ cd
+.gitkeep      Proyecto2/    comandos.txt
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4 (main)
+$ mkdir Proyecto
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4 (main)
+$ cd Proyecto
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (main)
+$ ls
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (main)
+$ git init
+Initialized empty Git repository in C:/Users/Vicente/Desktop/github/bootcamp/UDD/semana4/Proyecto/.git/
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (master)
+$ git branch feature/login
+fatal: not a valid object name: 'master'
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (master)
+$ git checkout -b feature/login
+Switched to a new branch 'feature/login'
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (feature/login)
+$ touch index.html
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (feature/login)
+$ pwd
+/c/Users/Vicente/Desktop/github/bootcamp/UDD/semana4/Proyecto
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (feature/login)
+$ ls
+index.html
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (feature/login)
+$ vi index.html
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (feature/login)
+$ less index.html
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (feature/login)
+$ mkdir css
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (feature/login)
+$ cd css
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto/css (feature/login)
+$ touch styles.css
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto/css (feature/login)
+$ cd ..
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (feature/login)
+$ ls
+css/  index.html
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (feature/login)
+$ mkdir js
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (feature/login)
+$ touch js/script.js
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (feature/login)
+$ ls
+css/  index.html  js/
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (feature/login)
+$ git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (feature/login)
+$ git status
+On branch feature/login
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   css/styles.css
+        new file:   index.html
+        new file:   js/script.js
+
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (feature/login)
+$ git commit -m "se agregan archivos html css y js"
+[feature/login (root-commit) 58c035e] se agregan archivos html css y js
+ 3 files changed, 1 insertion(+)
+ create mode 100644 css/styles.css
+ create mode 100644 index.html
+ create mode 100644 js/script.js
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (feature/login)
+$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (feature/login)
+$ ls
+css/  index.html  js/
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (feature/login)
+$ git checkout -b feature/navbar
+Switched to a new branch 'feature/navbar'
+
+Vicente@LAPTOP-4G8LPGRT MINGW64 ~/Desktop/github/bootcamp/UDD/semana4/Proyecto (feature/navbar)
+$

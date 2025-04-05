@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <title>Calculadora UDD</title>
+</head>
+
+<body>
+    <button id="ejecutarCalculadora">EJECUTAR CALCULADORA</button>
+
+    <script type="module">
+        import { calculadora } from './calculadora.js';
+        import { Constantes } from './constantes.js';
+
+        document.getElementById('ejecutarCalculadora').addEventListener('click', () => {
+            calculadora();
+        });
+    </script>
+</body>
+
+</html>

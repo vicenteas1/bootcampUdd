@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     <title>Idiomas UDD</title>
-    <script src="./idiomas.js"></script>
 </head>
 
 <body>
-    <button id="ejecutarIdiomas" onclick="idiomas()">EJECUTAR IDIOMAS</button>
+    <button id="ejecutarIdiomas">EJECUTAR IDIOMAS</button>
+
+    <script type="module">
+        import { idiomas } from './idiomas.js';
+        import { Constantes } from './constantes.js';
+
+        document.getElementById('ejecutarIdiomas').addEventListener('click', () => {
+            idiomas();
+        });
+    </script>
 </body>
 
 </html>

@@ -16,7 +16,7 @@ export class Constantes {
         es: { saludo: "Hola", despedida: "Adiós" },
         en: { saludo: "Hello", despedida: "Goodbye" },
         pt: { saludo: "Olá", despedida: "Tchau" },
-        zh: { saludo: "你好", despedida: "再见" },
-        jp: { saludo: "こんにちは", despedida: "さようなら" }
+        zh: { saludo: "你好 (Nǐ hǎo)", despedida: "再见 (Zàijiàn)" },
+        jp: { saludo: "こんにちは (Konnichiwa)", despedida: "さようなら (Sayōnara)" }
     };
 }

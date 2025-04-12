@@ -1,0 +1,45 @@
+<!--
+    El objetivo de este reto es crear un programa en JavaScript que calcule el Índice de Masa Corporal (IMC) de una persona y que muestre el rango en el que se encuentra según la clasificación de la Organización Mundial de la Salud (OMS).
+
+    Instrucciones:
+
+    Solicitar al usuario su peso en kilogramos y su altura en metros.
+    Calcular el IMC utilizando la siguiente fórmula: IMC = peso (kg) / altura (m)^2.
+    Mostrar el IMC con dos decimales.
+    Clasificar el IMC según los rangos establecidos por la OMS y mostrar el resultado:
+
+    Por debajo del peso normal: IMC < 18.5 Peso normal: 18.5 ≤ IMC < 24.9 Sobrepeso: 25 ≤ IMC < 29.9 Obesidad grado 1: 30 ≤ IMC < 34.9 Obesidad grado 2: 35 ≤ IMC < 39.9 Obesidad grado 3: IMC ≥ 40
+
+    Al ejecutar el código, obtener directamente en consola este texto:
+
+    Por favor, ingrese su peso (kg): 70
+    Por favor, ingrese su altura (m): 1.75
+    Su IMC es: 22.86
+
+    Usted se encuentra en el rango de peso normal.
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <title>Calculadora IMC UDD</title>
+</head>
+
+<body>
+    <button id="ejecutar calculadora">Ejecutar Calculadora</button>
+
+    <script type="module">
+        import  { Category }    from './categoryClass.js';
+        import  { Constant }    from './constantClass.js';
+        import  { Imc      }    from './imcClass.js';
+
+        document.getElementById('ejecutar calculadora').addEventListener('click', () => {
+            const imcInstance = new Imc();
+            imcInstance.execute();
+        });
+    </script>
+</body>
+
+</html>

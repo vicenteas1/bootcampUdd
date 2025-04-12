@@ -24,18 +24,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <link rel="stylesheet" href="./styles.css">
     <title>Calculadora IMC UDD</title>
 </head>
 
 <body>
-    <button id="ejecutar calculadora">Ejecutar Calculadora</button>
+    <button id="ejecutarCalculadora" class="btn-next">
+        Ejecutar Calculadora
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+    </button>
 
     <script type="module">
         import  { Category }    from './categoryClass.js';
         import  { Constant }    from './constantClass.js';
         import  { Imc      }    from './imcClass.js';
 
-        document.getElementById('ejecutar calculadora').addEventListener('click', () => {
+        document.getElementById('ejecutarCalculadora').addEventListener('click', () => {
             const imcInstance = new Imc();
             imcInstance.execute();
         });

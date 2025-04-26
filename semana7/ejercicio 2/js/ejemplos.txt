@@ -1,4 +1,4 @@
-const libro1 = new Libro ('Don quijote de la mancha', 10000, 'Miguel de Cervantes');
+const producto1 = new Producto ('pan', 10000, 10);
 
 undefined
 libro1.resumen()

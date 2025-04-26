@@ -1,46 +1,73 @@
-# 🛒 Reto de la Semana: Catálogo de Productos
+# 🐾 Reto: Gestión de Animales y Perros (POO en JavaScript)
 
-Crea un programa para gestionar un catálogo de productos en una tienda.
-
-El programa debe permitir agregar productos, eliminar productos, buscar productos por nombre y mostrar todos los productos. Debes implementar funciones de declaración, funciones de expresión, funciones anónimas y funciones de flecha. Los productos deben tener un nombre y un precio.
+Crea un programa en JavaScript que modele animales utilizando clases y herencia.  
+Implementa una clase base `Animal` y una clase hija `Perro` que amplíe sus funcionalidades.
 
 ---
 
-## 🧠 Objetivo CRUD
+## 🧠 Objetivo
 
-Desarrollar un programa que permita:
+Desarrollar un sistema que permita:
 
-- Agregar productos
-- Eliminar productos
-- Buscar productos por nombre
-- Mostrar todos los productos del catálogo
+- Crear animales con nombre y edad
+- Crear perros que además tengan una raza
+- Acceder y modificar atributos mediante getters y setters
+- Hacer que los perros "ladren" con un método especial
+- Mostrar toda la información con `toString()`
 
-Cada producto debe tener:
+Cada objeto debe tener:
 
 - `nombre` (string)
-- `precio` (number)
+- `edad` (number)
+- `raza` (string, sólo para perros)
 
 ---
 
 ## ⚙️ Requisitos Técnicos
 
-Implementar las siguientes funciones:
+Implementar las siguientes clases y métodos:
 
-### ✅ `agregarProducto(nombre, precio)`
-- **Tipo:** Función de declaración
-- **Acción:** Agrega un producto al catálogo
+### ✅ `Animal`
+- **Atributos:** `nombre`, `edad`
+- **Métodos:**
+  - `getNombre()`: Devuelve el nombre
+  - `setNombre(nombre)`: Modifica el nombre (validando tipo)
+  - `getEdad()`: Devuelve la edad
+  - `setEdad(edad)`: Modifica la edad (validando tipo)
+  - `toString()`: Devuelve una cadena con el nombre y edad
 
-### ✅ `eliminarProducto(nombre)`
-- **Tipo:** Función de expresión
-- **Acción:** Elimina un producto del catálogo por su nombre
-
-### ✅ `buscarProducto(nombre)`
-- **Tipo:** Función anónima asignada a una variable
-- **Acción:** Busca un producto por su nombre y lo devuelve
-
-### ✅ `mostrarProductos()`
-- **Tipo:** Función de flecha
-- **Acción:** Muestra todos los productos del catálogo
+### ✅ `Perro` (Extiende de `Animal`)
+- **Atributos adicionales:** `raza`
+- **Métodos:**
+  - `getRaza()`: Devuelve la raza
+  - `setRaza(raza)`: Modifica la raza (validando tipo)
+  - `ladrar()`: Devuelve un mensaje simulando un ladrido
+  - `toString()`: Devuelve una cadena con nombre, edad y raza
 
 ---
 
+## 📂 Estructura del Proyecto
+
+
+---
+
+## 🛠️ Cómo probarlo
+
+1. Instala una extensión como **Live Server** o usa un servidor local.
+2. Abre el archivo `index.html` en el navegador.
+3. Observa los resultados en la consola (`F12` o `Ctrl + Shift + I`).
+
+---
+
+## 🔥 Ejemplo de Uso
+
+```javascript
+import Perro from './js/perroClass.js';
+
+const perro = new Perro('Fox', 15, 'Fox Terrier');
+
+perro.toString()|;
+// Salida: nombre: Fox, edad: 15, raza: Fox Terrier
+
+perro.ladrar()|;
+// Salida: nombre: Fox, ladra guau guau

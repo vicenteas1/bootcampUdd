@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal - perro</title>
+</head>
+<body>
+    <script type="module">
+        import Perro from './js/perroClass.js';
+
+        const perro = new Perro ('Fox', 15, 'fox terrier');
+
+        perro.toString();
+        perro.ladrar();
+        window.perro = perro;
+    </script>
+</body>
+</html>

@@ -1,23 +1,8 @@
-ApiResponse {message: 'Producto creado con éxito', data: Producto, statusCode: 201}data: Producto {nombre: 'Laptop', precio: 1500}message: "Producto creado con éxito"statusCode: 201[[Prototype]]: Object
-ApiResponse {message: 'Catálogo actual', data: Array(1), statusCode: 200}data: (3) [Producto, Producto, Producto]message: "Catálogo actual"statusCode: 200[[Prototype]]: Object
-
-tienda.agregarProducto("Monitor", 100)
-ApiResponse {message: 'Producto creado con éxito', data: Producto, statusCode: 201}data: Producto {nombre: 'Monitor', precio: 100}message: "Producto creado con éxito"statusCode: 201[[Prototype]]: Object
-
-tienda.mostrarProductos()
-ApiResponse {message: 'Catálogo actual', data: Array(2), statusCode: 200}data: (3) [Producto, Producto, Producto]message: "Catálogo actual"statusCode: 200[[Prototype]]: Object
-
-tienda.mostrarProductos('Monitor')
-ApiResponse {message: 'Catálogo actual', data: Array(2), statusCode: 200}data: (3) [Producto, Producto, Producto]message: "Catálogo actual"statusCode: 200[[Prototype]]: Object
-
-tienda.agregarProducto('prod1', 1)
-ApiResponse {message: 'Producto creado con éxito', data: Producto, statusCode: 201}data: Producto {nombre: 'prod1', precio: 1}message: "Producto creado con éxito"statusCode: 201[[Prototype]]: Object
-
-tienda.mostrarProductos()
-ApiResponse {message: 'Catálogo actual', data: Array(3), statusCode: 200}data: (3) [Producto, Producto, Producto]message: "Catálogo actual"statusCode: 200[[Prototype]]: Object
-
-tienda.eliminarProducto('prod1')
-ApiResponse {message: 'Producto eliminado', data: 'prod1', statusCode: 200}data: "prod1"message: "Producto eliminado"statusCode: 200[[Prototype]]: Object
-
-tienda.mostrarProductos()
-ApiResponse {message: 'Catálogo actual', data: Array(2), statusCode: 200}data: (2) [Producto, Producto]message: "Catálogo actual"statusCode: 200[[Prototype]]: Object
+const perro1 = new Perro ('Dolly', 14, 'Fox Terrier')
+undefined
+perro1.toString()
+'nombre: Dolly, edad: 14, raza: Fox Terrier'
+perro.toString()
+'nombre: Fox, edad: 15, raza: fox terrier'
+perro.ladrar()
+'nombre: Fox, ladra guagu guau'

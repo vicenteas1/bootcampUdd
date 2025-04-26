@@ -58,7 +58,7 @@ export class Vehiculo {
     }
 
     toString() {
-        return `Marca: ${this.getMarca()}, Modelo: ${this.getModelo()}, Año: ${this.getAnio()}`;
+        return `Marca: ${this.getMarca()}, Modelo: ${this.getModelo()}, Año: ${this.getAnio()}, Estado: ${this.getEstado()}`;
     }
 
     arrancar() {
@@ -73,8 +73,8 @@ export class Vehiculo {
             }
             this.setEstado(1);
             return new ApiResponse({
-                message: `Marca: ${this.getMarca()}, Modelo: ${this.getModelo()}, Año: ${this.getAnio()}, en marcha.`,
-                data: this.getEstado(),
+                message: this.toString(),
+                data: this,
                 statusCode: 200
             });
         } catch (error) {
@@ -98,8 +98,8 @@ export class Vehiculo {
             }
             this.setEstado(0);
             return new ApiResponse({
-                message: `Marca: ${this.getMarca()}, Modelo: ${this.getModelo()}, Año: ${this.getAnio()}, se ha detenido.`,
-                data: this.getEstado(),
+                message: this.toString(),
+                data: this,
                 statusCode: 200
             });
         } catch (error) {

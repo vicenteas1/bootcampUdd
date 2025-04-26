@@ -6,7 +6,6 @@ export class Vehiculo {
         this.modelo = modelo;
         this.anio   = anio;
         this.estado = estado;
-    
     }
 
     getMarca(){

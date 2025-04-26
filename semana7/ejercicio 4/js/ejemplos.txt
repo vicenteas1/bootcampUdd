@@ -1,0 +1,31 @@
+vehiculo.arrancar()
+ApiResponse {message: 'Marca: Toyota, Modelo: Prius, Año: 2019, en marcha.', data: 1, statusCode: 200}data: 1message: "Marca: Toyota, Modelo: Prius, Año: 2019, en marcha."statusCode: 200[[Prototype]]: Object
+vehiculo.arrancar()
+vehiculoClass.js:118 Atención: El vehículo ya se encuentra en estado: marcha
+ApiResponse {message: 'Estado no valido. El vehiculo ya se encuentra andando', data: 1, statusCode: 400}data: 1message: "Estado no valido. El vehiculo ya se encuentra andando"statusCode: 400[[Prototype]]: Object
+vehiculo.detener()
+ApiResponse {message: 'Marca: Toyota, Modelo: Prius, Año: 2019, se ha detenido.', data: 0, statusCode: 200}
+vehiculo.detener()
+vehiculoClass.js:118 Atención: El vehículo ya se encuentra en estado: detenido
+ApiResponse {message: 'Estado no valido. El vehiculo ya se encuentra detenido', data: 0, statusCode: 400}
+vehiculo.detener()
+vehiculoClass.js:118 Atención: El vehículo ya se encuentra en estado: detenido
+ApiResponse {message: 'Estado no valido. El vehiculo ya se encuentra detenido', data: 0, statusCode: 400}
+vehiculo.arrancar()
+ApiResponse {message: 'Marca: Toyota, Modelo: Prius, Año: 2019, en marcha.', data: 1, statusCode: 200}
+vehiculo.arrancar()
+vehiculoClass.js:118 Atención: El vehículo ya se encuentra en estado: marcha
+ApiResponse {message: 'Estado no valido. El vehiculo ya se encuentra andando', data: 1, statusCode: 400}
+vehiculo.arrancar()
+vehiculoClass.js:118 Atención: El vehículo ya se encuentra en estado: marcha
+ApiResponse {message: 'Estado no valido. El vehiculo ya se encuentra andando', data: 1, statusCode: 400}
+vehiculo.detener()
+ApiResponse {message: 'Marca: Toyota, Modelo: Prius, Año: 2019, se ha detenido.', data: 0, statusCode: 200}
+vehiculo.arrancar()
+ApiResponse {message: 'Marca: Toyota, Modelo: Prius, Año: 2019, en marcha.', data: 1, statusCode: 200}
+vehiculo.detener()
+ApiResponse {message: 'Marca: Toyota, Modelo: Prius, Año: 2019, se ha detenido.', data: 0, statusCode: 200}
+vehiculo.arrancar()
+ApiResponse {message: 'Marca: Toyota, Modelo: Prius, Año: 2019, en marcha.', data: 1, statusCode: 200}
+vehiculo.detener()
+ApiResponse {message: 'Marca: Toyota, Modelo: Prius, Año: 2019, se ha detenido.', data: 0, statusCode: 200}

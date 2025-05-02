@@ -29,4 +29,19 @@ biblioteca.prestarLibroExacto("libroInfantil1", "autorInfantil1", 1);
 ApiResponse {message: 'El libro "libroInfantil1" tiene restricción por edad y no se proporcionó la edad del lector.', data: null, statusCode: 403}
 
 biblioteca.prestarLibroExacto("libroInfantil1", "autorInfantil1", 1, 10);
-ApiResponse {message: 'El lector no cumple con la edad mínima (5 años) para leer "libroInfantil1".', data: null, statusCode: 403}
+ApiResponse {message: 'Se encontró el libro: "libroInfantil1". Se cambiará el estado a prestado.', data: LibroInfantil, statusCode: 200}
+
+biblioteca.disponibilizarLibro("libro1", "autor1", 1);
+ApiResponse {message: 'Se encontró el libro: "libro1". Se cambiará el estado a disponible.', data: Libro, statusCode: 200}
+
+biblioteca.disponibilizarLibro("libro2", "autor1", 1);
+ApiResponse {message: 'No se encontraron libros con el título "libro2".', data: null, statusCode: 404}
+
+biblioteca.listarLibros();
+ApiResponse {message: 'Lista de libros', data: Array(2), statusCode: 200}data: Array(2)0: Libro {titulo: 'libro1', autor: 'autor1', anio: 1, disponible: 1}1: LibroInfantil {titulo: 'libroInfantil1', autor: 'autorInfantil1', anio: 1, disponible: 0, edadMinima: 5}length: 2[[Prototype]]: Array(0)message: "Lista de libros"statusCode: 200[[Prototype]]: Object
+
+biblioteca.listarLibrosDisponibles();
+ApiResponse {message: 'Se encontraron 1 libro(s) disponible(s).', data: Array(1), statusCode: 200}
+
+biblioteca.listarLibrosPrestados();
+ApiResponse {message: 'Se encontraron 1 libro(s) prestados(s).', data: Array(1), statusCode: 200}

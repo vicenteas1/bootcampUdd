@@ -258,6 +258,24 @@ export class Biblioteca {
             statusCode: 200
         });
     }
+
+    listarLibrosDisponibles(){
+        const disponibles = this.libros.filter(libro => libro.getDisponible() === 1);
+        return new ApiResponse({
+            message: `Se encontraron ${disponibles.length} libro(s) disponible(s).`,
+            data: disponibles,
+            statusCode: 200
+        });
+    }
+
+    listarLibrosPrestados(){
+        const prestados = this.libros.filter(libro => libro.getDisponible() === 0);
+        return new ApiResponse({
+            message: `Se encontraron ${prestados.length} libro(s) disponible(s).`,
+            data: prestados,
+            statusCode: 200
+        });
+    }
 }
 
 export default Biblioteca;

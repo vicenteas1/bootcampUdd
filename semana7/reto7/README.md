@@ -1,73 +1,73 @@
-# 📚 Sistema de Biblioteca – Programación Orientada a Objetos (POO)
+# 📚 Sistema de Biblioteca en JavaScript (POO)
 
-## 🧾 Descripción del Proyecto
+## 🧾 Descripción
 
-Este proyecto implementa un sistema básico para la gestión de una biblioteca, diseñado con los principios fundamentales de la **Programación Orientada a Objetos (POO)**: **Encapsulamiento, Herencia, Abstracción y Polimorfismo**.
+Este proyecto implementa un sistema de gestión de biblioteca utilizando **Programación Orientada a Objetos (POO)** en JavaScript. A través de este sistema, puedes agregar libros, realizar préstamos, buscar ejemplares y validar restricciones de edad para libros infantiles.
 
-El objetivo principal es aplicar estos conceptos a través de un conjunto de clases que simulan el funcionamiento básico de una biblioteca.
+El diseño está basado en los pilares de la POO:
+
+- **Encapsulamiento**
+- **Herencia**
+- **Polimorfismo**
+- **Abstracción**
 
 ---
 
-## 🧱 Estructura del Sistema
+## 🧱 Estructura del Proyecto
 
-### 🔸 Clase `Libro`
-Representa un libro genérico con las siguientes propiedades:
+### 🔹 `Libro`
+Clase base para libros generales.
+
+**Propiedades:**
 - `titulo` (string)
 - `autor` (string)
-- `año` (number)
-- `disponible` (boolean) – Indica si el libro está disponible para préstamo.
+- `anio` (number)
+- `disponible` (0 o 1)
 
-### 🔸 Clase `LibroInfantil` (hereda de `Libro`)
-Extiende la clase `Libro` añadiendo:
-- `edadMinima` (number) – Edad mínima recomendada para leer el libro.
-
-### 🔸 Clase `Biblioteca`
-Encapsula una lista de libros y proporciona los siguientes métodos:
-- `agregarLibro(libro: Libro)`: Añade un nuevo libro a la biblioteca.
-- `buscarPorTitulo(titulo: string)`: Devuelve una lista de libros cuyo título coincide con el buscado.
-- `prestarLibro(titulo: string)`: Si el libro está disponible, cambia su estado y devuelve un mensaje de confirmación. Si no, informa que no está disponible.
+**Métodos:**
+- Getters y setters con validación
+- `toString()`
 
 ---
 
-## ⚙️ Ejecución y Pruebas
+### 🔹 `LibroInfantil` (hereda de `Libro`)
+Extiende `Libro` añadiendo una edad mínima recomendada.
 
-1. Crea una instancia de la clase `Biblioteca`.
-2. Añade varias instancias de `Libro` y `LibroInfantil`.
-3. Utiliza los métodos:
-   - `agregarLibro()`
-   - `buscarPorTitulo()`
-   - `prestarLibro()`
-4. Observa cómo se aplican los conceptos de POO en la interacción entre clases.
+**Propiedad adicional:**
+- `edadMinima` (number)
 
----
-
-## 💡 Conceptos de POO Aplicados
-
-- **Encapsulamiento**: Las propiedades de cada clase están bien definidas y sus valores se manipulan mediante métodos específicos.
-- **Herencia**: La clase `LibroInfantil` hereda de `Libro` para reutilizar y extender su funcionalidad.
-- **Abstracción**: Se ocultan los detalles internos de cómo se maneja la lista de libros dentro de `Biblioteca`.
-- **Polimorfismo**: Se pueden manejar instancias de `Libro` y `LibroInfantil` de manera uniforme dentro de la biblioteca.
+**Métodos:**
+- Getters y setters validados
+- `toString()` personalizado
 
 ---
 
-## 🛠️ Tecnologías
+### 🔹 `Biblioteca`
+Clase que administra una colección de libros.
 
-- Lenguaje: JavaScript (o TypeScript, según el entorno del curso)
-- Paradigma: Programación Orientada a Objetos
+**Métodos disponibles:**
+- `agregarLibro(titulo, autor, anio, disponible)`
+- `agregarLibroInfantil(titulo, autor, anio, edadMinima, disponible)`
+- `buscarPorTitulo(titulo)`
+- `buscarLibroExacto(titulo, autor, anio)`
+- `prestarLibro(titulo)`  
+  ➤ Si el libro es infantil, devuelve error `403` y pide usar `prestarLibroExacto()`  
+- `prestarLibroExacto(titulo, autor, anio, edad)`  
+  ➤ Valida edad mínima si aplica  
+- `disponibilizarLibro(titulo, autor, anio)`
+- `listarLibros()` – Lista todos
+- `listarLibrosDisponibles()` – Solo disponibles
+- `listarLibrosPrestados()` – Solo prestados
 
 ---
 
-## 📎 Ejemplo de Código (Resumen)
+### 🔹 `ApiResponse`
+
+Clase para estandarizar las respuestas del sistema.
 
 ```js
-const biblioteca = new Biblioteca();
-
-const libro1 = new Libro("Cien Años de Soledad", "Gabriel García Márquez", 1967, true);
-const libroInfantil1 = new LibroInfantil("Harry Potter", "J.K. Rowling", 1997, true, 8);
-
-biblioteca.agregarLibro(libro1);
-biblioteca.agregarLibro(libroInfantil1);
-
-console.log(biblioteca.buscarPorTitulo("Harry Potter"));
-console.log(biblioteca.prestarLibro("Harry Potter"));
-console.log(biblioteca.prestarLibro("Harry Potter")); // Debería indicar que ya no está disponible
+new ApiResponse({
+  message: "Texto explicativo",
+  data: objetoDeDatos,
+  statusCode: 200
+});

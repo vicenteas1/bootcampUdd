@@ -196,7 +196,7 @@ export class Biblioteca {
                         statusCode: 403
                     });
                 };
-                if(edad !== null && libro.getEdadMinima() < edad){
+                if(edad !== null && edad <= libro.getEdadMinima()){
                     return new ApiResponse({
                         message: `El lector no cumple con la edad mínima (${libro.getEdadMinima()} años) para leer "${libro.getTitulo()}".`,
                         data: null,

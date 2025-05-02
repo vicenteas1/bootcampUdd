@@ -139,11 +139,21 @@ export class Biblioteca {
                 });
             }
 
-            this.libros[index].setDisponible(0);
+            const libro = this.libros[index];
+
+            if (libro instanceof LibroInfantil) {
+                return new ApiResponse({
+                    message: `Este libro requiere validación de edad. Usa prestarLibroExacto() con la edad del lector.`,
+                    data: libro,
+                    statusCode: 403
+                });
+            }
+
+            libro.setDisponible(0);
 
             return new ApiResponse({
                 message: mensaje,
-                data: this.libros[index],
+                data: libro,
                 statusCode: 200
             });           
         } catch (error) {
@@ -176,19 +186,21 @@ export class Biblioteca {
                 });
             }
 
-            if(edad !== null && this.libros[index].getEdadMinima() < edad){
+            const libro = this.libros[index];
+
+            if(edad !== null && libro.getEdadMinima() < edad){
                 return new ApiResponse({
-                    message: `El lector no cumple con la edad mínima para este libro. Libro: ${this.libros[index]}`,
+                    message: `El lector no cumple con la edad mínima para este libro. Libro: ${libro}`,
                     data: null,
                     statusCode: 403
                 });
             };
     
-            this.libros[index].setDisponible(0);
+            libro.setDisponible(0);
 
             return new ApiResponse({
                 message: mensaje,
-                data: this.libros[index],
+                data: libro,
                 statusCode: 200
             });           
         } catch (error) {
@@ -221,11 +233,13 @@ export class Biblioteca {
                 });
             }
 
-            this.libros[index].setDisponible(1);
+            const libro = this.libros[index];
+
+            libro.setDisponible(1);
 
             return new ApiResponse({
                 message: mensaje,
-                data: this.libros[index],
+                data: libro,
                 statusCode: 200
             });           
         } catch (error) {

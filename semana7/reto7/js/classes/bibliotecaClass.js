@@ -271,7 +271,7 @@ export class Biblioteca {
     listarLibrosPrestados(){
         const prestados = this.libros.filter(libro => libro.getDisponible() === 0);
         return new ApiResponse({
-            message: `Se encontraron ${prestados.length} libro(s) disponible(s).`,
+            message: `Se encontraron ${prestados.length} libro(s) prestados(s).`,
             data: prestados,
             statusCode: 200
         });

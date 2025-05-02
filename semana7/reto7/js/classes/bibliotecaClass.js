@@ -188,13 +188,22 @@ export class Biblioteca {
 
             const libro = this.libros[index];
 
-            if(edad !== null && libro.getEdadMinima() < edad){
-                return new ApiResponse({
-                    message: `El lector no cumple con la edad mínima para este libro. Libro: ${libro}`,
-                    data: null,
-                    statusCode: 403
-                });
-            };
+            if (libro instanceof LibroInfantil) {
+                if(edad == null){
+                    return new ApiResponse({
+                        message: `El libro "${libro.getTitulo()}" tiene restricción por edad y no se proporcionó la edad del lector.`,
+                        data: null,
+                        statusCode: 403
+                    });
+                };
+                if(edad !== null && libro.getEdadMinima() < edad){
+                    return new ApiResponse({
+                        message: `El lector no cumple con la edad mínima (${libro.getEdadMinima()} años) para leer "${libro.getTitulo()}".`,
+                        data: null,
+                        statusCode: 403
+                    });
+                };
+            }
     
             libro.setDisponible(0);
 

@@ -5,7 +5,6 @@ import LibroInfantil from "./libroInfantilClass.js";
 export class Biblioteca {
     constructor(){
         this.libros = [];
-        return 'constructor creado'
     }
 
     agregarLibro(titulo, autor, anio, disponible = 1){

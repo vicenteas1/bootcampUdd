@@ -20,4 +20,5 @@ export class Constantes {
     static cDivisionCero       = "No se puede dividir por 0";
     static cOperacionError     = "Error, operación no valida. Eliga una operación válida porfavor.";
     static cError              = "Error";
-    static cSalir              = "¡Hasta luego!";}
+    static cSalir              = "¡Hasta luego!";
+}

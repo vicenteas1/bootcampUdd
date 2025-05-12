@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Encuestas - Bootcamp UDD</title>
+</head>
+<body>
+    <h1>Gestión de Encuestas</h1>
+
+    <button id="executeSurveyManager">Iniciar gestor de encuestas</button>
+    <button id="executeQuestionManager">Iniciar gestor de preguntas</button>
+    <button id="executeAnswerManager">Iniciar gestor de respuestas</button>
+
+    <h2>Responder Encuestas</h2>
+    <button id="ExecuteSurvey">Responder encuesta</button>
+    <h3>Resumen</h3>
+    <div id="output" style="white-space: pre-wrap; margin-top: 20px;"></div>
+
+    <script type="module">
+        import { surveyManagement, questionManagement, answerManagement, executeSurvey } from './index.js';
+    
+        document.getElementById('executeSurveyManager').addEventListener('click', () => { surveyManagement(); });
+        document.getElementById('executeQuestionManager').addEventListener('click', () => { questionManagement(); });
+        document.getElementById('executeAnswerManager').addEventListener('click', () => { answerManagement(); });
+        document.getElementById('ExecuteSurvey').addEventListener('click', () => { 
+            document.getElementById("output").innerText = "";
+            executeSurvey(); 
+        });
+    </script>
+    
+</body>
+</html>

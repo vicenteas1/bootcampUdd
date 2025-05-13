@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encuestas - PF</title>
+</head>
+<body>
+  <h1>Gestión de Encuestas (Programación Funcional)</h1>
+
+  <button id="crearEncuestaBtn">Crear Encuesta</button>
+  <button id="agregarPreguntaBtn">Agregar Pregunta</button>
+  <button id="agregarRespuestaBtn">Agregar Respuesta</button>
+  <button id="votarEncuestaBtn">Votar</button>
+  <button id="verResultadosBtn">Ver Resultados</button>
+
+  <pre id="output" style="white-space: pre-wrap; margin-top: 20px; border: 1px solid #ccc; padding: 10px;"></pre>
+
+  <script type="module">
+    import {
+      crearEncuesta,
+      agregarPregunta,
+      agregarRespuestaAEncuesta ,
+      votar,
+      generarResumen
+    } from './index.js';
+
+    let encuestas = [];
+    let encuestaActual = null;
+
+    const output = document.getElementById("output");
+
+    const print = (text) => {
+      output.textContent = text;
+    };
+
+    document.getElementById("crearEncuestaBtn").addEventListener("click", () => {
+      const titulo = prompt("Ingrese el título de la encuesta:");
+      if (!titulo) return;
+
+      const nuevaEncuesta = crearEncuesta(titulo);
+      encuestas = [...encuestas, nuevaEncuesta];
+      encuestaActual = nuevaEncuesta;
+
+      print(`Encuesta creada:\n\n${JSON.stringify(nuevaEncuesta, null, 2)}`);
+    });
+
+    document.getElementById("agregarPreguntaBtn").addEventListener("click", () => {
+      if (!encuestaActual) return alert("Primero crea una encuesta.");
+      const texto = prompt("Ingrese el texto de la pregunta:");
+      if (!texto) return;
+
+      encuestaActual = agregarPregunta(encuestaActual, texto);
+      print(`Pregunta agregada:\n\n${JSON.stringify(encuestaActual, null, 2)}`);
+    });
+
+    document.getElementById("agregarRespuestaBtn").addEventListener("click", () => {
+      if (!encuestaActual || encuestaActual.preguntas.length === 0) return alert("Agrega una pregunta primero.");
+      const preguntaIndex = parseInt(prompt(`¿A qué pregunta deseas agregar respuesta? (0-${encuestaActual.preguntas.length - 1})`));
+      if (isNaN(preguntaIndex) || !encuestaActual.preguntas[preguntaIndex]) return alert("Índice inválido.");
+
+      const texto = prompt("Ingrese el texto de la respuesta:");
+      if (!texto) return;
+
+      encuestaActual = agregarRespuestaAEncuesta(encuestaActual, preguntaIndex, texto);
+      print(`Respuesta agregada:\n\n${JSON.stringify(encuestaActual, null, 2)}`);
+    });
+
+    document.getElementById("votarEncuestaBtn").addEventListener("click", () => {
+      if (!encuestaActual || encuestaActual.preguntas.length < 8) return alert("Encuesta inválida (mínimo 8 preguntas con respuestas).");
+
+      const tieneRespuestas = encuestaActual.preguntas.every(p => p.respuestas.length > 0);
+      if (!tieneRespuestas) return alert("Todas las preguntas deben tener al menos una respuesta.");
+
+      let nuevaEncuesta = encuestaActual;
+
+      encuestaActual.preguntas.forEach((pregunta, i) => {
+        const opciones = pregunta.respuestas.map((r, idx) => `${idx}: ${r.texto}`).join('\n');
+        const seleccion = parseInt(prompt(`Pregunta ${i + 1}: ${pregunta.titulo}\n${opciones}`));
+        nuevaEncuesta = votar(nuevaEncuesta, i, seleccion);
+      });
+
+      encuestaActual = nuevaEncuesta;
+      print("Gracias por votar.\n\n" + generarResumen(encuestaActual));
+    });
+
+    document.getElementById("verResultadosBtn").addEventListener("click", () => {
+      if (!encuestaActual) return alert("No hay encuesta activa.");
+      print(generarResumen(encuestaActual));
+    });
+  </script>
+</body>
+</html>

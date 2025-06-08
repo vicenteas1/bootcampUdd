@@ -1,14 +1,71 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.1">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
   <diagram id="nAL--xnjeVSfb1MrYbZF" name="Página-1">
-    <mxGraphModel dx="1678" dy="914" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2593" dy="1529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="k4z4PLg4-Btq6ay-aLpY-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="80" y="80" width="1920" height="1080" as="geometry" />
         </mxCell>
-        <mxCell id="aMg9K_tx_rn3WzgjQEs0-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="80" y="80" width="680" height="60" as="geometry" />
+        <mxCell id="aMg9K_tx_rn3WzgjQEs0-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="80" width="1920" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-1" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Header del landing page.&lt;/span&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;Contara con el el logo a la izquierda del header&lt;/li&gt;&lt;li&gt;Contará con las secciones de navegación ubicada al medio del header&lt;/li&gt;&lt;li&gt;Las secciones navegables serán:&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Sobre nosotros,&amp;nbsp;&lt;/li&gt;&lt;li&gt;Productos,&amp;nbsp;&lt;/li&gt;&lt;li&gt;Contacto&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2030" y="50" width="290" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-2" value="LOGO" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="95" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-3" value="AXOLOT LABS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="95" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-8" value="CONTACTANOS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="95" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-9" value="OPCION 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="95" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-10" value="OPCION 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="95" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-11" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="360" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-12" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1040" width="1920" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-13" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1640" y="200" width="360" height="840" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-14" value="OPCION 3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="95" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-15" value="OPCION 4" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="95" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-16" value="OPCION 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="95" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-21" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="200" width="1200" height="168" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-22" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="368" width="1200" height="168" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-23" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="536" width="1200" height="168" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-24" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="704" width="1200" height="168" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-25" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="872" width="1200" height="168" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-26" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Body del landing page.&lt;/span&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Contará con 5 secciones&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Cada seccion debe utilizar el 100% de la vista&lt;/li&gt;&lt;li&gt;La primera sección debe tener el eslogan de la empresa y un gif de la mascota de la empresa.&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;La segunda sección debe ser un sobre nosotros (&quot;About us&quot;) indicando la mision, vision y propuesta de valor.&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;La tercera sección debe incluir los productos que se ofrecen como acordeon. Al poner el mouse sobre el producto que se ofrece, debe ocurrir una animacion que cambie la forma del contenedor.&amp;nbsp;&lt;/li&gt;&lt;li&gt;La cuarta sección debe tener un carrucel con los logos de las empresas clientes que trabajan con nosotros&amp;nbsp;&amp;nbsp;&lt;/li&gt;&lt;li&gt;La quinta sección debe ser un formulario de contacto&lt;/li&gt;&lt;/ul&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2030" y="209" width="290" height="401" as="geometry" />
+        </mxCell>
+        <mxCell id="KseGa89p2z4wjIcFhr-8-28" value="El footer cumple con la siguiente informacion.&lt;div&gt;Telefono de contacto&lt;/div&gt;&lt;div&gt;Direccion&lt;/div&gt;&lt;div&gt;ademas del siguiente texto:&lt;/div&gt;&lt;div&gt;&quot;2025 Axolot Labs S.A. Todos los derechos reservados&quot;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="1040" width="290" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

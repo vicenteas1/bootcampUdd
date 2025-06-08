@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axolot Labs</title>
+    <title>Axlot Lab</title>
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="./assets/images/logo.png">
+    <link rel="shortcut icon" href="./assets/images/axlot-favicon-04.png">
 
     <!--CSS Google Api Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,47 +23,62 @@
 </head>
 <body>
   <!-- Encabezado del sitio -->
-  <header class="header-container">
-    <h1 class="logo">Axolot Labs</h1>
-    <!-- Navegación principal -->
-    <nav>
-      <ul class="nav-list">
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Productos</a></li>
-        <li><a href="#">Clientes</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
+  <header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar w/ text</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Navegación principal -->
+    <nav class="navbar mb-3 fixed-top navbar-expand-lg container-fluid navbar-wrapper">
+
+      <!--Logo navbar-->
+      <div class="px-5 col-md-2">
+        <a class="navbar-brand" href="#home">
+          <img class="navbar-logo" src="./assets/images/logo-axlot.png" alt="Axlot Lab">
+        </a>
+      </div>
+
+      <!--Boton hamburguesa-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-        </ul>
-        <span class="navbar-text">
-          Navbar text with an inline element
-        </span>
+
+      <!--Menu Navbar-->
+      <div class="pe-5 col-md-10">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            
+            <li class="nav-item active px-3">
+                <a class="nav-link" href="#about">Nosotros</a>
+            </li>
+            
+            <li class="nav-item px-3">
+                <a class="nav-link" href="#">Productos</a>
+            </li>
+            
+            <li class="nav-item px-3">
+                <a class="nav-link" href="#">Clientes</a>
+            </li>
+            
+            <li class="nav-item px-3">
+                <a class="nav-link" href="#">Contacto</a>
+            </li>
+          
+          </ul>
+        </div>
       </div>
+
     </nav>
   </header>
 
   <main>
-
+    <section class="container" id="about">
+      <h1>Desde el agua al mundo digital</h1>
+    </section>
   </main>
 
-  <footer></footer>
+  <footer class="container-fluid text-white py-4">
+    <div class="container-footer">
+      <p>&copy; Axlot Lab - Todos los derechos reservados</p>
+    </div>
+  </footer>
 
   <!-- Scripts -->
   <script src="./lib/dist/jquery/jquery.js"></script>

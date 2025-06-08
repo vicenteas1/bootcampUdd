@@ -1,3 +1,6 @@
+/**
+    Configuracion estandar
+*/
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +8,28 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    background-color: var(--neutral-white);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding-top: 80px;
+}
+
+/**
+    Declaracion de variables
+*/
 :root {
     --primary-color: #FFCFD5;
     --primary-color-hover: #FF0FD5;
@@ -16,14 +41,45 @@
     --neutral-blue: #00B4FF;
     --neutral-white: #ffffff;
     --neutral-black: #000000;
+
+    --navbar-background-grad-ini: #F9D7E8;
+    --navbar-background-grad-end: #F3A5C9;
+    --navbar-link-color: #af2571;
 }
 
-body {
-  margin: 0;
-  background-color: var(--neutral-white);
+/**
+    Navbar
+*/
+.navbar-wrapper {
+    background: var(--navbar-background-grad-ini);
+    background: linear-gradient(90deg, var(--navbar-background-grad-ini) 0%, var(--navbar-background-grad-end) 100%);
+    border-bottom: solid 3px var(--neutral-black);
 }
 
-header.header-container {
-    background-color: var(--neutral-black);
+.nav-link {
+    color: var(--navbar-link-color);
+    border-radius: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+}
 
+.nav-link:hover {
+    color: var(--navbar-link-color);
+    background-color: var(--navbar-background-grad-ini);
+    transform: translateY(-3px);
+    border-radius: 20px;
+}
+
+/**
+    Footer
+*/
+footer {
+    background-image: url('../../assets/images/patten-axlot.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.container-footer {
+    color: var(--neutral-black);
 }

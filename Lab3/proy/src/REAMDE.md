@@ -116,8 +116,3 @@ Con este proyecto pondrás en práctica:
 
 Habla con tus coaches para confirmar fechas de entrega.  
 Recuerda que para obtener tu insignia, debes cumplir con todos los requisitos y entregar dentro del plazo establecido.
-
----
-
-¿Listo para empezar?  
-¡Es hora de que tu negocio cobre vida en la web! 🌐✨

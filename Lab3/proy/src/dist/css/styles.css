@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FFCFD5;
+    --primary-color-hover: #FF0FD5;
+
+    --secondary-color: #F596A8;
+    --secondary-color-hover: #F506A8;
+
+    --neutral-grey: #2B2B2B;
+    --neutral-blue: #00B4FF;
+    --neutral-white: #ffffff;
+    --neutral-black: #000000;
+}
+
+body {
+  margin: 0;
+  background-color: var(--neutral-white);
+}
+
+header.header-container {
+    background-color: var(--neutral-black);
+
+}

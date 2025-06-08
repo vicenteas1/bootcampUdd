@@ -1,0 +1,122 @@
+/* Estilos globales */
+body {
+  margin: 0; /* Elimina el margen predeterminado del navegador */
+  font-family: Arial, sans-serif; /* Establece la fuente general del sitio */
+}
+
+/* Encabezado */
+header {
+  background-color: #333; /* Color de fondo oscuro para el encabezado */
+  color: white; /* Color del texto en blanco */
+  padding: 1em; /* Espaciado interno uniforme */
+  display: flex; /* Usa flexbox para alinear elementos */
+  justify-content: space-between; /* Separa logo y navegación horizontalmente */
+  align-items: center; /* Centra verticalmente los elementos del header */
+}
+
+.logo {
+  font-size: 1.5em; /* Tamaño grande para destacar el logotipo */
+  font-weight: bold; /* Negrita para más énfasis */
+}
+
+.nav-list {
+  list-style: none; /* Elimina viñetas de la lista */
+  display: flex; /* Muestra los elementos de la lista en línea (horizontal) */
+  gap: 1em; /* Espaciado entre los ítems de navegación */
+  margin: 0; /* Elimina margen por defecto */
+  padding: 0; /* Elimina relleno por defecto */
+}
+
+.nav-list a {
+  color: white; /* Color de texto */
+  text-decoration: none; /* Elimina subrayado de los enlaces */
+  transition: color 0.3s; /* Transición suave al cambiar color */
+}
+
+.nav-list a:hover {
+  color: #f39c12; /* Color cuando el cursor pasa sobre el enlace */
+}
+
+/* Sección de productos */
+.productos {
+  padding: 2em; /* Espaciado alrededor de la sección */
+  text-align: center; /* Centra el texto */
+}
+
+.productos h1 {
+  font-size: 2em; /* Tamaño grande para el título */
+  color: #222; /* Color gris oscuro */
+}
+
+.grid-productos {
+  display: grid; /* Usa grid layout para organizar los productos */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Crea columnas flexibles que se adaptan al ancho */
+  gap: 2em; /* Espacio entre elementos de la grilla */
+  margin-top: 2em; /* Espacio entre el título y la grilla */
+}
+
+.producto img {
+  width: 100%; /* Imagen se adapta al ancho de su contenedor */
+  border: 2px solid #ccc; /* Borde gris claro alrededor de la imagen */
+  transition: transform 0.3s; /* Transición suave para animación de escala */
+}
+
+.producto img:hover {
+  transform: scale(1.05); /* Agranda ligeramente la imagen al pasar el cursor */
+}
+
+.producto button {
+  margin-top: 1em; /* Espacio entre la imagen y el botón */
+  padding: 0.5em 1em; /* Relleno interno del botón */
+  background-color: #f39c12; /* Color de fondo naranja */
+  color: white; /* Texto blanco */
+  border: none; /* Elimina el borde predeterminado del botón */
+  cursor: pointer; /* Cambia el cursor a tipo "mano" */
+  font-size: 1em; /* Tamaño del texto */
+  transition: background-color 0.3s, transform 0.2s; /* Transición suave para color y escala */
+}
+
+.producto button:hover {
+  background-color: #d35400; /* Oscurece el color al hacer hover */
+  transform: scale(1.05); /* Agranda ligeramente el botón */
+}
+
+/* Testimonios */
+.testimonios {
+  padding: 2em; /* Espaciado interno */
+  background-color: #f8f8f8; /* Fondo gris muy claro */
+}
+
+.testimonios h2 {
+  text-align: center; /* Centra el título */
+  margin-bottom: 1em; /* Espacio debajo del título */
+}
+
+blockquote {
+  font-style: italic; /* Texto en cursiva */
+  background-color: #fff; /* Fondo blanco */
+  border-left: 5px solid #f39c12; /* Línea vertical anaranjada a la izquierda */
+  padding: 1em; /* Relleno interno */
+  margin: 1em auto; /* Margen vertical y centrado horizontalmente */
+  max-width: 600px; /* Ancho máximo del bloque de cita */
+}
+
+/* Pie de página */
+footer {
+  background-color: #333; /* Fondo oscuro */
+  color: white; /* Texto blanco */
+  text-align: center; /* Centra el texto */
+  padding: 1em; /* Relleno interno */
+}
+
+/* Diseño responsivo */
+@media (max-width: 600px) {
+  .nav-list {
+    flex-direction: column; /* Coloca los elementos uno debajo del otro */
+    align-items: center; /* Centra los elementos en columna */
+  }
+
+  .grid-productos {
+    grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+  }
+}

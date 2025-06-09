@@ -153,6 +153,22 @@ div.container-vision p {
     background-color: var(--seccion-about-background-color);
 }
 
+.products-title {
+    color: var(--navbar-background-color);
+}
+
+.section-products .flip-front h3{
+    color: var(--seccion-mission-h1-color);
+}
+
+.section-products .flip-back h3{
+    color: var(--seccion-mission-h1-color);
+}
+
+.section-products .flip-back p{
+    color: var(--seccion-vision-p-color);
+}
+
 /* Carrusel base */
 .carousel-wrapper {
     position: relative;
@@ -173,7 +189,9 @@ div.container-vision p {
 }
 
 .flip-card {
+    flex: 0 0 calc(25% - 1rem); /* 4 por fila con gap */
     flex: 0 0 calc(25% - 1rem);
+    min-width: 250px;
     height: 350px;
     perspective: 1000px;
     scroll-snap-align: start;
@@ -244,7 +262,23 @@ div.container-vision p {
     right: 0;
 }
 
+/*
+    Seccion partners
+*/
+.section-partners h1 {
+    color: var(--navbar-background-color);
+}
 
+/*
+    Seccion contacto
+*/
+.section-contact h1 {
+    color: var(--navbar-background-color);
+}
+
+.section-contact label {
+    color: var(--prymary-color-1);
+}
 
 /**
     Footer
@@ -255,4 +289,20 @@ footer {
     background-repeat: repeat;
     background-position: center;
     color: var(--neutral-black);
+}
+
+@media (max-width: 1200px) {
+  .flip-card {
+    flex: 0 0 calc(33% - 1rem);
+  }
+}
+@media (max-width: 768px) {
+  .flip-card {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+@media (max-width: 576px) {
+  .flip-card {
+    flex: 0 0 100%;
+  }
 }

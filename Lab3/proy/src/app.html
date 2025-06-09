@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axlot Lab</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Axlot Lab</title>
 
-    <!--Favicon-->
-    <link rel="shortcut icon" href="./assets/images/axlot-favicon-04.png">
+  <!--Favicon-->
+  <link rel="shortcut icon" href="./assets/images/axlot-favicon-04.png" />
 
-    <!--CSS Google Api Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;display=swap" rel="stylesheet">
+  <!--CSS Google Api Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;display=swap"
+    rel="stylesheet" />
 
-    <!--CSS Bootstrap-->
-    <link rel="stylesheet" href="./lib/dist/bootstrap/css/bootstrap.css">
-    <!--CSS Styles-->
-    <link rel="stylesheet" href="./dist/css/styles.css">
+  <!--CSS Bootstrap-->
+  <link rel="stylesheet" href="./lib/dist/bootstrap/css/bootstrap.css" />
+  <!--CSS Styles-->
+  <link rel="stylesheet" href="./dist/css/styles.css" />
 </head>
+
 <body>
   <!-- Encabezado del sitio -->
   <header>
-
     <!-- Navegación principal -->
     <nav class="navbar mb-3 fixed-top navbar-expand-lg container-fluid navbar-wrapper">
-
       <!--Logo navbar-->
       <div class="px-5 col-md-2">
         <a class="navbar-brand" href="#home">
-          <img class="navbar-logo" src="./assets/images/logo-axlot.png" alt="Axlot Lab">
+          <img class="navbar-logo" src="./assets/images/logo-axlot.png" alt="Axlot Lab" />
         </a>
       </div>
 
       <!--Boton hamburguesa-->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -44,44 +49,191 @@
       <div class="pe-5 col-md-10">
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            
             <li class="nav-item active px-3">
-                <a class="nav-link" href="#about">Nosotros</a>
+              <a class="nav-link" href="#about">Nosotros</a>
             </li>
-            
+
             <li class="nav-item px-3">
-                <a class="nav-link" href="#">Productos</a>
+              <a class="nav-link" href="#products">Productos</a>
             </li>
-            
+
             <li class="nav-item px-3">
-                <a class="nav-link" href="#">Clientes</a>
+              <a class="nav-link" href="#">Clientes</a>
             </li>
-            
+
             <li class="nav-item px-3">
-                <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="#">Contacto</a>
             </li>
-          
           </ul>
         </div>
       </div>
-
     </nav>
   </header>
 
   <main>
-    <section class="container" id="about">
-      <h1>Desde el agua al mundo digital</h1>
+    <section class="container-fluid section-hero py-10"" id="hero">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="./assets/videos/video_recortado_10s.mp4" type="video/mp4" />
+      </video>
+      <div class="container text-center hero">
+        <h1>Desde el agua al mundo digital</h1>
+        <p class="lead">
+          Desarrollamos soluciones digitales con el corazón de un ajolote.
+        </p>
+      </div>
     </section>
+
+    <section class="container-fluid section-about py-10" id="about">
+      <div class="container">
+        <div style="grid-template-columns: 1fr 1fr" class="d-grid gap-10">
+          <div class="p-2 container-about">
+            <h1>Sobre nosotros</h1>
+            <p class="lead">
+              Somos una empresa multinacional fundada el año 2025 en Santiago
+              de Chile. Contamos con profesionales con una gran trayectora
+              dentro del mundo TI, enfocados siempre en entregar productos de
+              la más alta calidad.
+            </p>
+          </div>
+
+          <div class="row p-2">
+            <div class="container-mission">
+              <h1>Misión</h1>
+              <p class="lead">
+                Crear soluciones digitales únicas y de calidad, colaborando
+                con nuestros clientes para dar vida a sus ideas con innovación
+                y cercanía.
+              </p>
+            </div>
+
+            <div class="container-vision">
+              <h1>Visión</h1>
+              <p class="lead">
+                Ser un referente en Latinoamérica en desarrollo de software
+                creativo, confiable y hecho a medida.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid section-products py-10" id="products">
+      <div class="container">
+        <h1 class="text-center mb-4">Nuestros Productos</h1>
+
+        <div class="carousel-wrapper position-relative">
+          <button class="arrow left-arrow" onclick="scrollCarousel(-1)">&#10094;</button>
+
+          <div class="product-carousel" id="product-carousel">
+            <!-- Tarjeta 1 -->
+            <div class="flip-card">
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <h3>Producto 1</h3>
+                  <img src="./assets/images/logo-sin-fondo.png" alt="Producto 1">
+                </div>
+                <div class="flip-back">
+                  <h3>Producto 1</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="flip-card">
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <h3>Producto 2</h3>
+                  <img src="./assets/images/logo-sin-fondo.png" alt="Producto 2">
+                </div>
+                <div class="flip-back">
+                  <h3>Producto 2</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="flip-card">
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <h3>Producto 3</h3>
+                  <img src="./assets/images/logo-sin-fondo.png" alt="Producto 2">
+                </div>
+                <div class="flip-back">
+                  <h3>Producto 3</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="flip-card">
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <h3>Producto 4</h3>
+                  <img src="./assets/images/logo-sin-fondo.png" alt="Producto 2">
+                </div>
+                <div class="flip-back">
+                  <h3>Producto 4</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="flip-card">
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <h3>Producto 5</h3>
+                  <img src="./assets/images/logo-sin-fondo.png" alt="Producto 2">
+                </div>
+                <div class="flip-back">
+                  <h3>Producto 5</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="flip-card">
+              <div class="flip-inner">
+                <div class="flip-front">
+                  <h3>Producto 6</h3>
+                  <img src="./assets/images/logo-sin-fondo.png" alt="Producto 2">
+                </div>
+                <div class="flip-back">
+                  <h3>Producto 6</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="arrow right-arrow" onclick="scrollCarousel(1)">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="container-fluid text-white py-4">
-    <div class="container-footer">
+  <footer class="container-fluid text-white py-4" id="contact">
+    <div class="container-footer text-center">
       <p>&copy; Axlot Lab - Todos los derechos reservados</p>
+      <div class="social-links mt-2">
+        <a href="#" class="me-2">Facebook</a>
+        <a href="#" class="me-2">Instagram</a>
+        <a href="#">LinkedIn</a>
+      </div>
     </div>
   </footer>
 
   <!-- Scripts -->
   <script src="./lib/dist/jquery/jquery.js"></script>
   <script src="./lib/dist/bootstrap/js/bootstrap.js"></script>
+  <script src="./dist/js/carrousel.js"></script>
 </body>
+
 </html>

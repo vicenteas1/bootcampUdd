@@ -16,7 +16,7 @@ html {
 
 body {
     margin: 0;
-    background-color: var(--neutral-white);
+    background-color: var(--neutral-color-white);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -31,44 +31,220 @@ main {
     Declaracion de variables
 */
 :root {
-    --primary-color: #FFCFD5;
-    --primary-color-hover: #FF0FD5;
+    /*Paleta de colores*/
+    --prymary-color-1: #af2571;
+    --prymary-color-2: #f8cde2;
+    --prymary-color-3: #f3a5c9;
+    --prymary-color-4: #ef8bb8;
+    --prymary-color-5: #00afd8;
+    --prymary-color-6: #61fefe;
+    --prymary-color-7: #2b2b2b;
 
-    --secondary-color: #F596A8;
-    --secondary-color-hover: #F506A8;
+    /*Neutral color*/
+    --neutral-color-black: #000000;
+    --neutral-color-white: #ffffff;
 
-    --neutral-grey: #2B2B2B;
-    --neutral-blue: #00B4FF;
-    --neutral-white: #ffffff;
-    --neutral-black: #000000;
+    /*Navbar Colors*/
+    --navbar-background-color: #00afd8;
+    --navbar-link-color: #ffffff;
+    --navbar-link-background-color: #00afd8;
+    --navbar-link-color-hover: #ffffff;
+    --navbar-link-color-background-hover: #f8cde2;
 
-    --navbar-background-grad-ini: #F9D7E8;
-    --navbar-background-grad-end: #F3A5C9;
-    --navbar-link-color: #af2571;
+    /*Seccion about*/
+    --seccion-about-background-color: var(--neutral-color-white);
+    --seccion-about-h1-color: var(--prymary-color-5);
+    --seccion-about-p-color: var(--prymary-color-7);
+    --seccion-mission-h1-color: var(--prymary-color-1);
+    --seccion-mission-p-color: var(--prymary-color-7);
+    --seccion-vision-h1-color: var(--prymary-color-1);
+    --seccion-vision-p-color: var(--prymary-color-7);
 }
 
 /**
     Navbar
 */
 .navbar-wrapper {
-    background: var(--navbar-background-grad-ini);
-    background: linear-gradient(90deg, var(--navbar-background-grad-ini) 0%, var(--navbar-background-grad-end) 100%);
-    border-bottom: solid 3px var(--neutral-black);
+    background-color: var(--navbar-background-color);
 }
 
 .nav-link {
     color: var(--navbar-link-color);
-    border-radius: 20px;
+    background-color: var(--navbar-link-background-color);
+    border-radius: 15px;
     transition: transform 0.3s ease, background-color 0.3s ease;
     display: inline-block;
 }
 
 .nav-link:hover {
-    color: var(--navbar-link-color);
-    background-color: var(--navbar-background-grad-ini);
+    color: var(--navbar-link-color-hover);
+    background-color: var(--navbar-link-color-background-hover);
     transform: translateY(-3px);
-    border-radius: 20px;
+    border-radius: 15px;
 }
+
+/**
+    Section hero
+*/
+.section-hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1;
+}
+
+.hero h1 {
+    color: var(--neutral-color-white);
+}
+
+.hero p {
+    color: var(--neutral-color-white);
+}
+
+/**
+    Section about
+*/
+.section-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--seccion-about-background-color);
+}
+
+div.container-about h1 {
+    color: var(--seccion-about-h1-color);
+}
+
+div.container-about p {
+    color: var(--seccion-about-p-color);
+}
+
+div.container-mission h1 {
+    color: var(--seccion-mission-h1-color);
+}
+
+div.container-mission p {
+    color: var(--seccion-mission-p-color);
+}
+
+div.container-vision h1 {
+    color: var(--seccion-vision-h1-color);
+}
+
+div.container-vision p {
+    color: var(--seccion-vision-p-color);
+}
+
+/**
+    Section products
+*/
+.section-products {
+    background-color: var(--seccion-about-background-color);
+}
+
+/* Carrusel base */
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem 2rem;
+}
+
+.product-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.flip-card {
+    flex: 0 0 calc(25% - 1rem);
+    height: 350px;
+    perspective: 1000px;
+    scroll-snap-align: start;
+}
+
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    backface-visibility: hidden;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.flip-front img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+.flip-back {
+    transform: rotateY(180deg);
+    background: #f8cde2;
+}
+
+/* Flechas */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #af2571;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+
 
 /**
     Footer
@@ -78,8 +254,5 @@ footer {
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
-}
-
-.container-footer {
     color: var(--neutral-black);
 }

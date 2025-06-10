@@ -71,7 +71,7 @@ main {
 .nav-link {
     color: var(--navbar-link-color);
     background-color: var(--navbar-link-background-color);
-    border-radius: 15px;
+    border-radius: 5px;
     transition: transform 0.3s ease, background-color 0.3s ease;
     display: inline-block;
 }
@@ -120,6 +120,12 @@ main {
     align-items: center;
     justify-content: center;
     background-color: var(--seccion-about-background-color);
+}
+
+.about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 
 div.container-about h1 {
@@ -291,17 +297,68 @@ footer {
     color: var(--neutral-black);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200) {
+
+/**
+    Section products
+*/
   .flip-card {
     flex: 0 0 calc(33% - 1rem);
   }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 720px) {
+/**
+    Navbar
+*/
+    .custom-logo-navbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+/**
+    Section about
+*/
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .container-mission,
+  .container-vision {
+    margin-bottom: 1rem;
+  }
+
+/**
+    Section products
+*/
   .flip-card {
     flex: 0 0 calc(50% - 1rem);
   }
 }
-@media (max-width: 576px) {
+
+@media (max-width: 540px) {
+/**
+    Section about
+*/
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .container-mission,
+  .container-vision {
+    margin-bottom: 0.5rem;
+  }
+/**
+    Section products
+*/
   .flip-card {
     flex: 0 0 100%;
   }

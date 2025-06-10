@@ -33,8 +33,8 @@
     <!-- Navegación principal -->
     <nav class="navbar mb-3 fixed-top navbar-expand-lg container-fluid navbar-wrapper">
       <!--Logo navbar-->
-      <div class="px-5 col-md-2">
-        <a class="navbar-brand" href="#home">
+      <div class="px-5 col-md-2 custom-logo-navbar">
+        <a class="navbar-brand" href="#hero">
           <img class="navbar-logo" src="./assets/images/logo-axlot.png" alt="Axlot Lab" />
         </a>
       </div>
@@ -71,7 +71,7 @@
   </header>
 
   <main>
-    <section class="container-fluid section-hero py-10"" id=" hero">
+    <section class="container-fluid section-hero py-10" id="hero">
       <video autoplay muted loop playsinline class="bg-video">
         <source src="./assets/videos/video_recortado_10s.mp4" type="video/mp4" />
       </video>
@@ -85,7 +85,7 @@
 
     <section class="container-fluid section-about py-10" id="about">
       <div class="container">
-        <div style="grid-template-columns: 1fr 1fr" class="d-grid gap-10">
+        <div class="d-grid gap-10 about-grid">
           <div class="p-2 container-about">
             <h1>Sobre nosotros</h1>
             <p class="lead">
@@ -279,9 +279,16 @@
 
   </main>
 
-  <footer class="container-fluid text-white py-4" id="contact">
+  <footer class="container-fluid text-white py-4" id="footer">
     <div class="container-footer text-center">
       <p>&copy; Axlot Lab - Todos los derechos reservados</p>
+      <div class="links mt-2">
+        <a href="#hero"     class="me-2">Home</a>
+        <a href="#about"    class="me-2">Sobre Nosotros</a>
+        <a href="#products" class="me-2">Productos</a>
+        <a href="#partners" class="me-2">Clientes</a>
+        <a href="#contact"  class="me-2">Contacto</a>
+      </div>
       <div class="social-links mt-2">
         <a href="#" class="me-2">Facebook</a>
         <a href="#" class="me-2">Instagram</a>

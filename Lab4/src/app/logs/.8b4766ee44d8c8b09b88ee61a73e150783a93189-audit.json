@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\Vicente\\Desktop\\github\\bootcamp\\UDD\\Lab4\\src\\app\\logs\\.8b4766ee44d8c8b09b88ee61a73e150783a93189-audit.json",
+    "files": [
+        {
+            "date": 1752299876638,
+            "name": "C:\\Users\\Vicente\\Desktop\\github\\bootcamp\\UDD\\Lab4\\src\\app\\logs\\12072025.log",
+            "hash": "09e85667700b316a38965b68387f5e63aae9b1ad66be2668598e72fe844aa4d4"
+        }
+    ],
+    "hashType": "sha256"
+}

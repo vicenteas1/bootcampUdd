@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "baseUrl": "./src/app",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@models/*": ["models/*"],
+      "@services/*": ["services/*"],
+      "@interfaces/*": ["interface/*"],
+      "@controllers/*": ["controller/*"],
+      "@routes/*": ["routes/*"]
+    }
+  }
+}

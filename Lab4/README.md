@@ -104,7 +104,7 @@ http://localhost:3000/api-docs
 ## Notas adicionales
 
 - Swagger está basado en el archivo `swagger.yaml` dentro de `src/app/config`.
-- Archivo .env debe contener PORT=<puerto> Y LOG_LEVEL=info para el funcionamiento
+- Archivo .env debe contener PORT={puerto} Y LOG_LEVEL=info para el funcionamiento
 
 ---
 

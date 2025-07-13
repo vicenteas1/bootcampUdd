@@ -5,10 +5,10 @@
   "main": "dist/app/main.js",
   "scripts": {
     "dev": "tsx watch src/app/main.ts",
-    "build": "tsc",
+    "build": "tsc && cp src/app/config/swagger.yaml dist/app/config/swagger.yaml",
     "start": "node dist/app/main.js",
-    "rd": "npm run dev",
-    "rbs": "npm run build && npm start"
+    "d": "npm run dev",
+    "rbs": "rm -rf dist && npm run build && npm start"
   },
   "keywords": [],
   "author": "",
@@ -17,13 +17,22 @@
   "dependencies": {
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "swagger-ui": "^5.26.2",
+    "swagger-ui-express": "^5.0.1",
+    "tree-cli": "^0.6.7",
+    "uuid": "^11.1.0",
     "winston": "^3.17.0",
-    "winston-daily-rotate-file": "^5.0.0"
+    "winston-daily-rotate-file": "^5.0.0",
+    "yamljs": "^0.3.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
     "@types/node": "^24.0.13",
+    "@types/swagger-ui-express": "^4.1.8",
+    "@types/uuid": "^10.0.0",
     "@types/winston": "^2.4.4",
+    "@types/yamljs": "^0.2.34",
     "tsx": "^4.7.0",
     "typescript": "^5.8.3"
   }

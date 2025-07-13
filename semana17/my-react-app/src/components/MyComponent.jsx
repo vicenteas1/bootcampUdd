@@ -1,4 +1,5 @@
 import { Contador } from "./ContadorComponent";
+import { FetchApi } from "./FetchApi";
 
 function MyComponent({ props }) {
   const { name, age, adult, hobbies, address, lastname } = props;
@@ -13,6 +14,7 @@ function MyComponent({ props }) {
       <div>{address.street + ', ' + address.number}</div>
       <div>{lastname}</div>
       <Contador />
+      <FetchApi />
     </div>
   );
 }

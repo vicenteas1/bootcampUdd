@@ -1,0 +1,62 @@
+[
+    {
+        "id": "d7b8b04c-5a7c-4b18-8a5c-d9d07f7fc6ca",
+        "hotel": "Hotel Neruda",
+        "fechaInicio": "2025-07-15",
+        "fechaFin": "2025-07-21",
+        "tipoHabitacion": "habitacion grande",
+        "numHuespedes": 5,
+        "estado": "en espera de pago",
+        "active": false
+    },
+    {
+        "id": "855b9b8a-54a0-4015-93ed-1ea1cf1f9bbc",
+        "hotel": "Hotel Neruda",
+        "fechaInicio": "2025-07-15",
+        "fechaFin": "2025-07-21",
+        "tipoHabitacion": "habitacion grande",
+        "numHuespedes": 5,
+        "estado": "pagado",
+        "active": true
+    },
+    {
+        "id": "41e47a1d-d526-4f21-b856-99a8aee212a7",
+        "hotel": "Hotel Neruda",
+        "fechaInicio": "2025-07-15",
+        "fechaFin": "2025-07-21",
+        "tipoHabitacion": "habitacion grande",
+        "numHuespedes": 5,
+        "estado": "pagado",
+        "active": true
+    },
+    {
+        "id": "a1e42edc-aa69-470a-bc88-a74235007d2c",
+        "hotel": "Hotel Neruda",
+        "fechaInicio": "2025-07-15",
+        "fechaFin": "2025-07-21",
+        "tipoHabitacion": "habitacion grande",
+        "numHuespedes": 5,
+        "estado": "pagado",
+        "active": true
+    },
+    {
+        "id": "1d24a468-a11a-4c76-bd01-17398bbcb768",
+        "hotel": "Hotel Neruda",
+        "fechaInicio": "2025-07-15",
+        "fechaFin": "2025-07-21",
+        "tipoHabitacion": "habitacion grande",
+        "numHuespedes": 5,
+        "estado": "pagado",
+        "active": true
+    },
+    {
+        "id": "66c17031-d0f4-407b-9570-c91bf5998634",
+        "hotel": "Hotel Neruda",
+        "fechaInicio": "2025-07-15",
+        "fechaFin": "2025-07-21",
+        "tipoHabitacion": "habitacion grande",
+        "numHuespedes": 5,
+        "estado": "pagado",
+        "active": true
+    }
+]

@@ -1,0 +1,196 @@
+openapi: 3.0.3
+info:
+  title: API de Reservas
+  version: 2.0.0
+  description: API para gestionar reservas de hotel con búsqueda avanzada
+
+servers:
+  - url: http://localhost:3000/api
+
+paths:
+  /reservas:
+    get:
+      summary: Obtener todas las reservas o filtrarlas
+      parameters:
+        - name: hotel
+          in: query
+          schema:
+            type: string
+        - name: tipo_habitacion
+          in: query
+          schema:
+            type: string
+        - name: estado
+          in: query
+          schema:
+            type: string
+        - name: num_huespedes
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+        - name: fecha_inicio
+          in: query
+          schema:
+            type: string
+
+        - name: fecha_fin
+          in: query
+          schema:
+            type: string
+
+      responses:
+        '200':
+          description: Lista de reservas
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Reserva'
+
+    post:
+      summary: Crear una nueva reserva
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReservaCreate'
+      responses:
+        '201':
+          description: Reserva creada exitosamente
+
+  /reservas/{id}:
+    get:
+      summary: Obtener una reserva por ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Reserva encontrada
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Reserva'
+        '404':
+          description: Reserva no encontrada
+
+    put:
+      summary: Actualizar una reserva existente
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReservaUpdate'
+      responses:
+        '200':
+          description: Reserva actualizada exitosamente
+        '404':
+          description: Reserva no encontrada
+
+    delete:
+      summary: Eliminar una reserva por ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Reserva eliminada exitosamente
+        '404':
+          description: Reserva no encontrada
+
+components:
+  schemas:
+    Reserva:
+      type: object
+      properties:
+        id:
+          type: string
+          example: d7b8b04c-5a7c-4b18-8a5c-d9d07f7fc6ca
+        hotel:
+          type: string
+          example: Hotel Neruda
+        fechaInicio:
+          type: string
+          example: '2025-07-15'
+        fechaFin:
+          type: string
+          example: '2025-07-21'
+        tipoHabitacion:
+          type: string
+          example: habitacion grande
+        numHuespedes:
+          type: integer
+          example: 5
+        estado:
+          type: string
+          example: pagado
+        active:
+          type: boolean
+          example: true
+
+    ReservaCreate:
+      type: object
+      required:
+        - hotel
+        - fechaInicio
+        - fechaFin
+        - tipoHabitacion
+        - numHuespedes
+        - estado
+      properties:
+        hotel:
+          type: string
+          example: Hotel Neruda
+        fechaInicio:
+          type: string
+          example: '2025-07-15'
+        fechaFin:
+          type: string
+          example: '2025-07-21'
+        tipoHabitacion:
+          type: string
+          example: habitacion grande
+        numHuespedes:
+          type: integer
+          example: 5
+        estado:
+          type: string
+          example: pagado
+
+    ReservaUpdate:
+      type: object
+      properties:
+        hotel:
+          type: string
+          example: Hotel Neruda
+        fechaInicio:
+          type: string
+          example: '2025-07-15'
+        fechaFin:
+          type: string
+          example: '2025-07-21'
+        tipoHabitacion:
+          type: string
+          example: habitacion grande
+        numHuespedes:
+          type: integer
+          example: 5
+        estado:
+          type: string
+          example: pagado
